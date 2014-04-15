@@ -1,12 +1,21 @@
 package annuaire.metier;
 /**
- *
+ * @version final
  * @author anthony 
  */
 public class Personne {
     private long numPers;
     private String nomPers, prenomPers, emailPers, dateNaissancePers,organisationPers,observationPers;
-       
+    /**
+     * Construit un objet Personne
+     * @param numPers long
+     * @param nomPers String 
+     * @param prenomPers String
+     * @param emailPers String
+     * @param dateNaissancePers String
+     * @param organisationPers String
+     * @param observationPers String
+     */
     public Personne(long numPers, String nomPers, String prenomPers, String emailPers, String dateNaissancePers, String organisationPers, String observationPers) {
         
         this.numPers = numPers;

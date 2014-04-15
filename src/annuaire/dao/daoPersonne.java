@@ -29,7 +29,10 @@ public class daoPersonne implements implementPersonne {
     public daoPersonne() {
         connection = connexion.connection();
     }
-
+/**
+ * procédure permettant l'ajout d'une personne a la BDD
+ * @param p correspond a une personne
+ */
     public void ajouter(Personne p) {
         PreparedStatement statement = null; 
        
@@ -57,7 +60,10 @@ public class daoPersonne implements implementPersonne {
             }
         }
     }
- 
+ /**
+ * procédure permettant la modification d'une personne existant dans la BDD
+ * @param b correspond a une personne
+ */
     public void update(Personne b) {
         PreparedStatement statement = null;
         try {
@@ -81,7 +87,10 @@ public class daoPersonne implements implementPersonne {
             }
         }
     }
-
+/**
+ * procédure permettant la suppression d'une personne de la BDD selon son id
+ * @param id correspond a l'id d'une personne selectionnée
+ */
     public void supprimer(int id) {
         PreparedStatement statement = null;
         try {
@@ -99,7 +108,10 @@ public class daoPersonne implements implementPersonne {
             }
         }
     }
-
+/**
+ * Fonction renvoyant une arraylist de personne contenant l'ensemble des personnes existantes dans la BDD
+ * @return lb
+ */
     public ArrayList<Personne> getALL() {
         ArrayList<Personne> lb = null;
         try {
@@ -147,6 +159,11 @@ public class daoPersonne implements implementPersonne {
         return lb;
     }
    */ 
+    
+    /**
+     * Fonction retournant le dernier id utilisé dans la BDD ( afin d'affecter un id valable pour les futurs entrées )
+     * @return maxid
+     */
      public int getMaxIdP()
     {
         Statement stm ;
@@ -166,11 +183,15 @@ public class daoPersonne implements implementPersonne {
        
         return maxid;
     }
+/*
+    public List<Personne> getRechercheNom(String nom) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+*/
 
     public List<Personne> getRechercheNom(String nom) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     
    
 }

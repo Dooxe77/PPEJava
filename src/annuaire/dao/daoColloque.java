@@ -34,7 +34,7 @@ public class daoColloque implements implementColloque{
     }
     /**
      * Ajoute à la base de donnée une colloque
-     * @param uneColloque type colloque en paramètre
+     * @param b  objet colloque en paramètre
      */
     public void ajouter(Colloque b) {
        PreparedStatement statement = null; 
@@ -67,7 +67,7 @@ public class daoColloque implements implementColloque{
     
     /**
      * Procédure: Met à jour une colloque dans la base de donnée. 
-     * @param numColloque numéro de colloque (primary key)
+     * @param c Objet colloque
      */
     public void update(Colloque c) {
        
@@ -236,6 +236,10 @@ public class daoColloque implements implementColloque{
         }
        
         return maxid;
+    }
+
+    public void supprimer(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

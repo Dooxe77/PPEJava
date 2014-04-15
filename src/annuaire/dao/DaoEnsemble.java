@@ -54,6 +54,10 @@ public class DaoEnsemble {
         return resultats;
    }
    
+   /**
+    * Ajoute une colloque en fonction de l'id de la personne et de la colloques
+    * C'est une procédure
+    */
    public void ajouter(int idP,int idC) {
         PreparedStatement statement = null; 
        

@@ -3,7 +3,10 @@ package annuaire.dao;
 
 import java.util.List;
 import annuaire.metier.Personne;
-
+/**
+ *
+ * @author Anthony
+ */
 public interface implementPersonne {
 
     public void ajouter(Personne b);

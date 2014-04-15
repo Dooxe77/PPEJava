@@ -15,6 +15,9 @@ public class controleurColloque {
   
       daoColloque dao;
       
+      /**
+       * Constructeur de controlleurColloque
+       */
       public controleurColloque()
       {
           dao = new daoColloque();

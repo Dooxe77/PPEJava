@@ -9,12 +9,16 @@ import annuaire.view.FrameCreerPersonne;
 public class controleurPersonne {
   
       daoPersonne dao;
-      
+      /**
+       * Constructeur de controleurPersonne
+       * 
+       */
       public controleurPersonne()
       {
           dao = new daoPersonne();
       }
            
+      
       public void personneEnregistrement(FrameCreerPersonne frame)
       {
           long numPers = Long.parseLong(frame.getTxtNumeroPersonne().getText());
@@ -44,7 +48,13 @@ public class controleurPersonne {
       {
           dao.update(p);
       }
-      
+      /**
+       * Cette fonction va recevoir un nom de fichier en paramétre
+       * elle va découper afin de ne laisser que l'extension
+       * et elle va retourner true si l'extension est bien csv
+       * @param fichier
+       * @return boolean
+       */
       public boolean getExtension(String fichier)
       {
           String extension = "";

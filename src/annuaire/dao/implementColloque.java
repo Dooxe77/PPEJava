@@ -1,6 +1,5 @@
 package annuaire.dao;
 import annuaire.metier.Colloque;
-import annuaire.view.FrameSupprimerColloque;
 import java.util.List;
 /**
  *
@@ -13,7 +12,7 @@ public interface implementColloque {
 
     public void update(Colloque uneColloque);
 
-    public void supprimer(int id, FrameSupprimerColloque fr);
+    public void supprimer(int id);
 
     public  List<Colloque> getALL();
 

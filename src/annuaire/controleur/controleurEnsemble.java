@@ -8,6 +8,9 @@ public class controleurEnsemble {
   
       DaoEnsemble daoE;
       
+      /**
+       * Constructeur de controleurEnsemble
+       */
       public controleurEnsemble()
       {
           daoE = new DaoEnsemble();
